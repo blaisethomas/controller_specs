@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  
-resources :items
+  resources :items
 
 # $ rake routes
+# get "items/" => "items#index"
+# get "items/:id" => "items#show", as: :item
+# get "items/new" => "items#new", as: :new_item
 
 
 #    items GET    /items(.:format)          items#index
